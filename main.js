@@ -1,10 +1,11 @@
+require("dotenv").config();
 const Discord = require("discord.js");
 const { MessageActionRow, MessageButton } = require("discord.js");
 const express = require("express");
 const axios = require("axios");
 const link = require("linkvertise.js");
 const ejs = require("ejs");
-const userId = 433195;
+const userId = process.env.LINKVERTISE_USER_ID;
 const linkvertise = new link(userId);
 const client = new Discord.Client({ intents: 32767 });
 const app = express();
@@ -18,7 +19,7 @@ app.set("view engine", "ejs");
 app.set("views", "views");
 app.use(express.static("assets"));
 
-require("dotenv").config();
+
 
 function generateToken() {
   var length = 50,
