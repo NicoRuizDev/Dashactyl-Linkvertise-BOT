@@ -28,7 +28,7 @@
   <h3 align="center">Dashactyl-Linkvertise-BOT</h3>
 
   <p align="center">
-    Discord bot for managing Dashactyl account using API commands.
+    Dashactyl Linkvertise BOT is a discord bot that creates the process of earning rewards through linkvertise links.
     <br />
     <a href="https://docs.nicoruiz.dev/"><strong>Explore the docs »</strong></a>
     <br />
@@ -45,28 +45,22 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This Discord bot allows users to manage their Dashactyl accounts directly from a Discord server using commands. The bot utilizes the Dashactyl API to interact with the Dashactyl platform, providing users with a convenient way to access the platform's features without leaving Discord.
+Dashactyl Linkvertise BOT is a Discord bot that helps users earn rewards in the form of Dashactyl coins through Linkvertise links. By completing tasks and earning rewards through the bot, users can accumulate Dashactyl Dash coins, which can then be used for various purposes within the Discord community. This bot streamlines the process of earning rewards and makes it easier for users to accumulate valuable Dashactyl Dash coins.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Key Features
 
--   Create coupons: Users can create new coupons with specified codes and discount percentages using the `/createcoupon` command.
--   Set coins and plans: Users can set the amount of coins and plans for specific users using the `/addcoins` command.
--   Delete accounts: Users can delete their Dashactyl accounts using the `/removeaccount` command.
--   Get information: Users can get detailed information about their resources and other account information using the `/userinfo` command.
--   Other features: The bot can also handle other commands such as `/setplan`, `/deletecoupon`, `/setresources` to show all available commands.
+-   `!earn` Use this command to generate the link.
 
 ## Conclusion
 
-This bot streamlines the process of managing a Dashactyl account and provides a convenient way for users to access the platform's features directly from Discord. It allows users to easily perform actions like creating coupons, setting coins and plans, deleting accounts, and getting information about their resources all from the discord chat.
-
-Please note that the above markdown will not preserve the styling when you copy and paste it to discord or other markdown renderer. You need to use the discord markdown or the markdown that is supported by the renderer.
+In conclusion, Dashactyl Linkvertise BOT is a comprehensive solution for users looking to earn rewards in the form of Dashactyl coins in a Minecraft hosting dashboard. By automating the process of completing tasks and earning rewards through Linkvertise links, the bot saves users time and effort, making it easier for them to accumulate valuable Dashactyl coins. Additionally, the bot is customizable and can be tailored to fit the specific needs of a Discord community, making it a versatile and valuable tool for those looking to take advantage of the rewards offered by Linkvertise links. Overall, Dashactyl-Linkvertise-BOT is a must-have for those looking to earn rewards in a Minecraft hosting dashboard through Linkvertise links.
 
 ### Built With
 
 * [NodeJs v16](https://nodejs.org)
-
+* [DiscordJs v13](https://discord.com/developers)
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
@@ -74,7 +68,7 @@ Please note that the above markdown will not preserve the styling when you copy 
 <!-- DOCUMENTATION -->
 ## Documentation
 
-Documentation of this Discord BOT is hosted on our documentation page: [https://docs.nicoruiz.dev/](https://docs.nicoruiz.dev/docs/category/discordcdn)
+Documentation of this Discord BOT is hosted on our documentation page: [https://docs.nicoruiz.dev/](https://docs.nicoruiz.dev)
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -120,7 +114,7 @@ Project Link: [https://github.com/NicoRuizDev/Dashactyl-Linkvertise-BOT](https:/
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* [Choose an Open Source License](https://choosealicense.com)
+* [DiscordJs v13](https://discord.com/developers)
 * [NodeJs v16](https://nodejs.org)
 
 
