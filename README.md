@@ -25,7 +25,7 @@
 <br />
 <div align="center">
   
-  <h3 align="center">Dashactyl-Manager</h3>
+  <h3 align="center">Dashactyl-Linkvertise-BOT</h3>
 
   <p align="center">
     Discord bot for managing Dashactyl account using API commands.
@@ -35,9 +35,9 @@
     <br />
     <a href="https://discord.gg/JRVPjPe3d8">Join Discord</a>
     ·
-    <a href="https://github.com/NicoRuizDev/Dashactyl-Manager/issues">Report Bug</a>
+    <a href="https://github.com/NicoRuizDev/Dashactyl-Linkvertise-BOT/issues">Report Bug</a>
     ·
-    <a href="https://github.com/NicoRuizDev/Dashactyl-Manager/issues">Request Feature</a>
+    <a href="https://github.com/NicoRuizDev/Dashactyl-Linkvertise-BOT/issues">Request Feature</a>
   </p>
 </div>
 
@@ -90,9 +90,9 @@ If you have a suggestion that would make this better, please fork the repo and c
 Don't forget to give the project a star! Thanks again!
 
 1. Fork the Project
-2. Create your Feature Branch (`git checkout -b NicoRuizDev/Dashactyl-Manager`)
-3. Commit your Changes (`git commit -m 'Add some Dashactyl-Manager'`)
-4. Push to the Branch (`git push origin NicoRuizDev/Dashactyl-Manager`)
+2. Create your Feature Branch (`git checkout -b NicoRuizDev/Dashactyl-Linkvertise-BOT`)
+3. Commit your Changes (`git commit -m 'Add some Dashactyl-Linkvertise-BOT'`)
+4. Push to the Branch (`git push origin NicoRuizDev/Dashactyl-Linkvertise-BOT`)
 5. Open a Pull Request
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -111,7 +111,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Project Link: [https://github.com/NicoRuizDev/Dashactyl-Manager](https://github.com/NicoRuizDev/Dashactyl-Manager)
+Project Link: [https://github.com/NicoRuizDev/Dashactyl-Linkvertise-BOT](https://github.com/NicoRuizDev/Dashactyl-Linkvertise-BOT)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -130,14 +130,14 @@ Project Link: [https://github.com/NicoRuizDev/Dashactyl-Manager](https://github.
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/NicoRuizDev/Dashactyl-Manager.svg?style=for-the-badge
-[contributors-url]: https://github.com/NicoRuizDev/Dashactyl-Manager/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/NicoRuizDev/Dashactyl-Manager.svg?style=for-the-badge
-[forks-url]: https://github.com/NicoRuizDev/Dashactyl-Manager/network/members
-[stars-shield]: https://img.shields.io/github/stars/NicoRuizDev/Dashactyl-Manager.svg?style=for-the-badge
-[stars-url]: https://github.com/NicoRuizDev/Dashactyl-Manager/stargazers
-[issues-shield]: https://img.shields.io/github/issues/NicoRuizDev/Dashactyl-Manager.svg?style=for-the-badge
-[issues-url]: https://github.com/NicoRuizDev/Dashactyl-Manager/issues
-[license-shield]: https://img.shields.io/github/license/NicoRuizDev/Dashactyl-Manager.svg?style=for-the-badge
-[license-url]: https://github.com/NicoRuizDev/Dashactyl-Manager/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/NicoRuizDev/Dashactyl-Linkvertise-BOT.svg?style=for-the-badge
+[contributors-url]: https://github.com/NicoRuizDev/Dashactyl-Linkvertise-BOT/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/NicoRuizDev/Dashactyl-Linkvertise-BOT.svg?style=for-the-badge
+[forks-url]: https://github.com/NicoRuizDev/Dashactyl-Linkvertise-BOT/network/members
+[stars-shield]: https://img.shields.io/github/stars/NicoRuizDev/Dashactyl-Linkvertise-BOT.svg?style=for-the-badge
+[stars-url]: https://github.com/NicoRuizDev/Dashactyl-Linkvertise-BOT/stargazers
+[issues-shield]: https://img.shields.io/github/issues/NicoRuizDev/Dashactyl-Linkvertise-BOT.svg?style=for-the-badge
+[issues-url]: https://github.com/NicoRuizDev/Dashactyl-Linkvertise-BOT/issues
+[license-shield]: https://img.shields.io/github/license/NicoRuizDev/Dashactyl-Linkvertise-BOT.svg?style=for-the-badge
+[license-url]: https://github.com/NicoRuizDev/Dashactyl-Linkvertise-BOT/blob/master/LICENSE.txt
 [product-screenshot]: images/screenshot.png
