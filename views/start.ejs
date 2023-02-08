@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loading...</title>
+    <link rel="stylesheet" href="/css/start.css">
+    <script src="/js/start.js"></script>
+    <script>
+        setTimeout(function () {
+            let stateObj = { id: "3" };
+            window.history.replaceState(stateObj, "Page", "/");
+            window.location.href = "<%= url %>";
+        }, 7000);
+    </script>
+</head>
+
+<body>
+    <div id="root" class="ring">
+        Loading
+        <span></span>
+    </div>
+</body>
+
+</html>
