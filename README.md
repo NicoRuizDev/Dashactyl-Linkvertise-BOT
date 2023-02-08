@@ -68,7 +68,7 @@ In conclusion, Dashactyl Linkvertise BOT is a comprehensive solution for users l
 <!-- DOCUMENTATION -->
 ## Documentation
 
-Documentation of this Discord BOT is hosted on our documentation page: [https://docs.nicoruiz.dev/](https://docs.nicoruiz.dev) (Coming Soon)
+Documentation of this Discord BOT is hosted on our documentation page: [https://docs.nicoruiz.dev/](https://docs.nicoruiz.dev) - Coming Soon
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
