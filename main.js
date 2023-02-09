@@ -46,62 +46,60 @@ client.on("messageCreate", (message) => {
         );
       } else {
         if (cooldowns.has(message.author.id)) {
-          const expirationTime =
-            cooldowns.get(message.author.id) + cooldownTime;
-          if (Date.now() < expirationTime) {
-            let seconds = (expirationTime - Date.now()) / 1000;
-            let minutes = Math.floor(seconds / 60);
-            let extraSeconds = seconds % 60;
-            extraSeconds =
-              extraSeconds < 10 ? "0" + extraSeconds : extraSeconds;
+  const expirationTime = cooldowns.get(message.author.id) + cooldownTime;
+  if (Date.now() < expirationTime) {
+    let seconds = (expirationTime - Date.now()) / 1000;
+    let minutes = Math.floor(seconds / 60);
+    let extraSeconds = seconds % 60;
+    extraSeconds =
+      extraSeconds < 10 ? "0" + extraSeconds : extraSeconds;
 
-            let embed = new Discord.MessageEmbed()
-              .setTitle("Cooldown!")
-              .setDescription(
-                "Please wait `" +
-                  `${minutes}` +
-                  " minutes` and `" +
-                  `${Math.floor(extraSeconds)} ` +
-                  "seconds` before generating the link again."
-              )
-              .setColor("#0099ff");
-            message.reply({
-              content: `<@${message.author.id}>`,
-              embeds: [embed],
-            });
-            return;
-          }
-        } else {
-          cooldowns.delete(message.author.id);
-          cooldowns.set(message.author.id, Date.now());
-          let user = message.author.id;
-          let otp = generateToken();
-          data[otp] = generateToken();
-          let url = process.env.APP_URL + "/earn/" + user + "/" + otp;
-          const row = new MessageActionRow().addComponents(
-            new MessageButton()
-              .setURL(url)
-              .setLabel("Earn Coins")
-              .setStyle("LINK")
-          );
-          let embed = new Discord.MessageEmbed()
-            .setTitle("Earn Coins")
-            .setDescription(
-              "**Success!** Link Generated for user: `" +
-                user +
-                "` \n```Hint: Use below buttons to get the link.```"
-            )
-            .setColor("#0099ff")
-            .setFooter({
-              text: `Requested By ${message.author.tag} | Made with ❤️ by NicoRuizDev`,
-              iconURL: `${process.env.APP_ICON}`,
-            });
-          message.reply({
-            content: `<@${message.author.id}>`,
-            embeds: [embed],
-            components: [row],
-          });
-        }
+    let embed = new Discord.MessageEmbed()
+      .setTitle("Cooldown!")
+      .setDescription(
+        "Please wait `" +
+          `${minutes}` +
+          " minutes` and `" +
+          `${Math.floor(extraSeconds)} ` +
+          "seconds` before generating the link again."
+      )
+      .setColor("#0099ff");
+    message.reply({
+      content: `<@${message.author.id}>`,
+      embeds: [embed],
+    });
+    return;
+  }
+}
+
+cooldowns.set(message.author.id, Date.now());
+let user = message.author.id;
+let otp = generateToken();
+data[otp] = generateToken();
+let url = process.env.APP_URL + "/earn/" + user + "/" + otp;
+const row = new MessageActionRow().addComponents(
+  new MessageButton()
+    .setURL(url)
+    .setLabel("Earn Coins")
+    .setStyle("LINK")
+);
+let embed = new Discord.MessageEmbed()
+  .setTitle("Earn Coins")
+  .setDescription(
+    "**Success!** Link Generated for user: `" +
+      user +
+      "` \n```Hint: Use below buttons to get the link.```"
+  )
+  .setColor("#0099ff")
+  .setFooter({
+    text: `Requested By ${message.author.tag} | Made with ❤️ by NicoRuizDev`,
+    iconURL: `${process.env.APP_ICON}`,
+  });
+message.reply({
+  content: `<@${message.author.id}>`,
+  embeds: [embed],
+  components: [row],
+});
       }
     });
   }
