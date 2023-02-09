@@ -132,7 +132,7 @@ app.get("/verify/:user/:otp/:token", (req, res) => {
   } else if (data[otp] == token) {
     const dataRES = { id: user, coins: coins };
     axios
-      .post(process.env.DASH_URL + "/api/setcoins", dataRES, {
+      .post(process.env.DASH_URL + "/api/addcoins", dataRES, {
         headers: {
           Authorization: `Bearer ${process.env.DASH_API}`,
         },
