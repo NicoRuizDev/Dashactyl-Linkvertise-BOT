@@ -19,8 +19,6 @@ app.set("view engine", "ejs");
 app.set("views", "views");
 app.use(express.static("assets"));
 
-
-
 function generateToken() {
   var length = 50,
     charset = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890",
@@ -32,21 +30,21 @@ function generateToken() {
 }
 
 client.on("messageCreate", (message) => {
-  const id = message.author.id;
-  const options = {
-    method: "GET",
-    url: process.env.DASH_URL + "/api/userinfo/",
-    params: { id: id },
-    headers: { Authorization: `Bearer ${process.env.DASH_API}` },
-  };
-  axios.request(options).then(async function (response) {
-    RESdata = response.data;
-    if (RESdata.status == "invalid id") {
-      message.reply(
-        `Your are not registered! Register on: ${process.env.DASH_URL}/login`
-      );
-    } else {
-      if (message.content.startsWith("!earn")) {
+  if (message.content.startsWith("!earn")) {
+    const id = message.author.id;
+    const options = {
+      method: "GET",
+      url: process.env.DASH_URL + "/api/userinfo/",
+      params: { id: id },
+      headers: { Authorization: `Bearer ${process.env.DASH_API}` },
+    };
+    axios.request(options).then(async function (response) {
+      RESdata = response.data;
+      if (RESdata.status == "invalid id") {
+        message.reply(
+          `Your are not registered! Register on: ${process.env.DASH_URL}/login`
+        );
+      } else {
         if (cooldowns.has(message.author.id)) {
           const expirationTime =
             cooldowns.get(message.author.id) + cooldownTime;
@@ -104,8 +102,8 @@ client.on("messageCreate", (message) => {
           });
         }
       }
-    }
-  });
+    });
+  }
 });
 
 app.get("/earn/:user/:otp", (req, res) => {
