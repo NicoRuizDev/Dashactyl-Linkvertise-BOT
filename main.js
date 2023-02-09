@@ -72,6 +72,7 @@ client.on("messageCreate", (message) => {
             return;
           }
         } else {
+          cooldowns.delete(message.author.id);
           cooldowns.set(message.author.id, Date.now());
           let user = message.author.id;
           let otp = generateToken();
