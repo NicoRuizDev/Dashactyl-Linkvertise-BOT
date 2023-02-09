@@ -40,8 +40,8 @@ client.on("messageCreate", (message) => {
     headers: { Authorization: `Bearer ${process.env.DASH_API}` },
   };
   axios.request(options).then(async function (response) {
-    data = response.data;
-    if (data.status == "invalid id") {
+    RESdata = response.data;
+    if (RESdata.status == "invalid id") {
       message.reply(
         `Your are not registered! Register on: ${process.env.DASH_URL}/login`
       );
@@ -132,9 +132,9 @@ app.get("/verify/:user/:otp/:token", (req, res) => {
   if (data[otp] == undefined) {
     res.redirect("/404");
   } else if (data[otp] == token) {
-    const data = { id: user, coins: coins };
+    const dataRES = { id: user, coins: coins };
     axios
-      .post(process.env.DASH_URL + "/api/setcoins", data, {
+      .post(process.env.DASH_URL + "/api/setcoins", dataRES, {
         headers: {
           Authorization: `Bearer ${process.env.DASH_API}`,
         },
