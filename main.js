@@ -12,7 +12,7 @@ const app = express();
 const port = 80;
 const data = {};
 const appURL = process.env.APP_URL;
-const cooldownTime = 20 * 60 * 1000;
+const cooldownTime = parseInt(process.env.COOLDOWN) * 60 * 1000;
 const cooldowns = new Map();
 
 app.set("view engine", "ejs");
@@ -126,7 +126,7 @@ app.get("/verify/:user/:otp/:token", (req, res) => {
   const user = req.params.user;
   const otp = req.params.otp;
   const token = data[otp];
-  const coins = process.env.COINS_TO_GIVE;
+  const coins = parseInt(process.env.COINS_TO_GIVE);
   if (data[otp] == undefined) {
     res.redirect("/404");
   } else if (data[otp] == token) {
