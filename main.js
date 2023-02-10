@@ -75,7 +75,7 @@ client.on("messageCreate", (message) => {
 cooldowns.set(message.author.id, Date.now());
 let user = message.author.id;
 let otp = generateToken();
-data[otp] = generateToken();
+data[user] = generateToken();
 let url = process.env.APP_URL + "/earn/" + user + "/" + otp;
 const row = new MessageActionRow().addComponents(
   new MessageButton()
@@ -115,7 +115,7 @@ app.get("/earn/:user/:otp", (req, res) => {
 app.get("/redirect/:user/:otp", (req, res) => {
   const user = req.params.user;
   const otp = req.params.otp;
-  const token = data[otp];
+  const token = data[user];
   let url = `${appURL}/verify/${user}/${otp}/${token}`;
   let shrink = linkvertise.shrink(url);
   res.redirect(shrink);
@@ -124,11 +124,11 @@ app.get("/redirect/:user/:otp", (req, res) => {
 app.get("/verify/:user/:otp/:token", (req, res) => {
   const user = req.params.user;
   const otp = req.params.otp;
-  const token = data[otp];
+  const token = data[user];
   const coins = parseInt(process.env.COINS_TO_GIVE);
-  if (data[otp] == undefined) {
+  if (data[user] == undefined) {
     res.redirect("/404");
-  } else if (data[otp] == token) {
+  } else if (data[user] == token) {
     const dataRES = { id: user, coins: coins };
     axios
       .post(process.env.DASH_URL + "/api/addcoins", dataRES, {
@@ -137,7 +137,7 @@ app.get("/verify/:user/:otp/:token", (req, res) => {
         },
       })
       .then(() => {
-        delete data[otp];
+        delete data[user];
         res.render("success", { coins: coins, user: user });
       });
   } else {
