@@ -30,7 +30,7 @@
   <p align="center">
     Dashactyl Linkvertise BOT is a discord bot that creates the process of earning rewards through linkvertise links.
     <br />
-    <a href="https://docs.nicoruiz.dev/"><strong>Explore the docs »</strong></a>
+    <a href="https://docs.nicoruiz.dev/docs/category/linkvertise-bot"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://discord.gg/JRVPjPe3d8">Join Discord</a>
